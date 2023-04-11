@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profilecust_nav"
+            android:title="Profile"
+            android:iconTint="@color/black"
+            android:icon="@drawable/usrnameblack"
+            />
+
+
+        <item
+            android:id="@+id/ordercust_nav"
+            android:title="Order History"
+            android:iconTint="@color/black"
+            android:icon="@drawable/ic_baseline_newspaperblack_24"/>
+
+        <item
+            android:id="@+id/addresscust_nav"
+            android:title="Address"
+            android:iconTint="@color/black"
+            android:icon="@drawable/ic_baseline_locationblack_on_24"/>
+
+        <item
+            android:id="@+id/custSetting"
+            android:title="Settings"
+            android:iconTint="@color/black"
+            android:icon="@drawable/ic_baseline_settings_24"
+            />
+
+        <item
+            android:id="@+id/termNconCust"
+            android:title="Term and Condition / Privacy"
+            android:icon="@drawable/ic_baseline_event_24"
+
+            />
+
+        <item
+            android:id="@+id/custLogout"
+            android:title="Log Out"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            />
+
+
+    </group>
+
+
+</menu>
+
+

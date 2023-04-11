@@ -1,0 +1,32 @@
+
+        drawerLayout.addDrawerListener(new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+                final float diffScaleOffset = slideOffset *(1-END_SCALE);
+                final float offsetScale = 1 - diffScaleOffset;
+                contentView.setScaleX(offsetScale);
+                contentView.setScaleY(offsetScale);
+
+
+                final float xOffset = drawerView.getWidth()*slideOffset;
+                final float xOffsetDiff = contentView.getWidth()*diffScaleOffset/2;
+                final float xTranslation = xOffset - xOffsetDiff;
+                contentView.setTranslationX(xTranslation);
+            }
+
+            @Override
+            public void onDrawerOpened(@NonNull View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerClosed(@NonNull View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+
+            }
+        });

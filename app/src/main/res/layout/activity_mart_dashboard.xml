@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mart.MartDashboard"
+    tools:openDrawer=""
+    android:id="@+id/drawerlayout_mart">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/martnavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C2C2C2"
+        android:theme="@style/Apptheme"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/mart_headerlayout"
+        app:menu="@menu/martmainmenu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="#00004D"
+                    android:layout_marginTop="-50dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="50dp"
+                        app:cardCornerRadius="30dp"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/martphoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageButton
+                        android:id="@+id/martmenu"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="70dp"
+                        android:src="@drawable/ic_baseline_view_headline_24"
+                        android:background="@color/cardview_shadow_end_color"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="150dp"-->
+<!--                android:background="#B0AEAE"-->
+<!--                android:paddingRight="10dp">-->
+
+<!--                <SearchView-->
+<!--                  -->
+<!--                    android:layout_width="350dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:background="@drawable/input_bg"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:queryHint="Search Product"/>-->
+
+<!--                <ImageButton-->
+
+<!--                   -->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@color/cardview_shadow_end_color"-->
+<!--                    android:src="@drawable/ic_baseline_list_24" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+
+                    android:id="@+id/dashboard_navi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:menu="@menu/mart_mainmenu"
+                    android:background="@drawable/input_bg2"
+                    android:backgroundTint="@color/white"
+                    app:itemTextColor="#EA6403" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="150dp">
+
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

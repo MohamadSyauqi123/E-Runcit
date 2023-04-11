@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mart.AddStoreProduct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="-50dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="#1A146D">
+
+                <ImageButton
+                    android:id="@+id/backbuttn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Product"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="40dp"
+                app:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/productphoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_baseline_add_24"
+                    android:scaleType="centerCrop" />
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:hint="Name"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/productname"
+                    android:layout_width="310dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-43dp"
+                    android:src="@drawable/ic_baseline_text_fields_24" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:hint="Title"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/producttitle"
+                    android:layout_width="310dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-43dp"
+                    android:src="@drawable/ic_baseline_text_fields_24" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg">
+
+                <Spinner
+                    android:id="@+id/productcategory"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-40dp"
+                    android:src="@drawable/ic_baseline_apps_24" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:hint="Unit e.g. Kg, g, etc"
+                android:textColorHint="@color/black">
+
+
+                <Spinner
+                    android:id="@+id/productunit"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:spinnerMode="dropdown" />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-42dp"
+                    android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:hint="Price"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/productprice"
+                    android:layout_width="310dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-40dp"
+                    android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="670dp"
+            android:background="@drawable/input_bg2"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="10dp">
+
+                <Button
+                    android:id="@+id/saveproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#EA6403"
+                    android:clickable="true"
+                    android:text="Save"
+                    android:textAllCaps="false" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

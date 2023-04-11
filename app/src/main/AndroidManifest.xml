@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="e-Runcit"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Mart.CustomerOrderItem"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerProductList"
+            android:exported="false" />
+        <activity
+            android:name=".MyMapsPermission"
+            android:exported="false" />
+        <activity
+            android:name=".mapsView"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.MartAddress"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.MartAddressDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.MartTermNCon"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.MartOrder"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.MartSettings"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerPayment"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerAddressDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerSettings"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerTermNCond"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerOrder"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerProductDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerViewShopItem"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.MartDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.AddStoreProduct"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.EditStoreContact"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.editStorePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.EditStoreOwnerName"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.EditStoreName"
+            android:exported="false" />
+        <activity
+            android:name=".Mart.MartProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerCart"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerFavourite"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerAddress"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.EditContact"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.EditPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.EditFullname"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDxWiTVlpIZ5iHEkEDRsIgYQYy29Fiszv4" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

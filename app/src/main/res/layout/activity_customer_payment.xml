@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.CustomerPayment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backarrow"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Payment Method"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#B0AEAE"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/credit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text="Credit Card"
+                android:textColor="#00005F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="95dp"
+                android:src="@drawable/ewallet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="110dp"
+                android:text="TnGo eWallet"
+                android:textColor="#00005F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="158dp"
+                android:src="@drawable/cash" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="170dp"
+                android:text="Cash"
+                android:textColor="#00005F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/creditpaybttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="35dp"
+                    android:onClick="onRadioButtonClicked" />
+
+
+                <RadioButton
+                    android:id="@+id/ewllaetpaybttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="15sp"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton
+                    android:id="@+id/cashpaybttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="12dp"
+                    android:onClick="onRadioButtonClicked" />
+
+
+            </RadioGroup>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#B0AEAE"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text="Pick-Up"
+                android:textColor="#00005F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/pickup" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="110dp"
+                android:text="Delivery"
+                android:textColor="#00005F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="95dp"
+                android:src="@drawable/deli" />
+
+            <RadioGroup
+                android:id="@+id/service_method"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/pickupbttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="37dp" />
+
+                <RadioButton
+
+                    android:id="@+id/deliverybttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="10dp" />
+            </RadioGroup>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:text="Delivery Charge"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-20dp"
+            android:text="RM"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="-20dp"
+            android:text="0"
+            android:textColor="@color/black" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Subtotal"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-20dp"
+            android:text="RM"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="-20dp"
+            android:hint="Subtotal"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Total Payment"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-20dp"
+            android:text="RM"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="-20dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/confirmpaymentbttn"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#EA6403"
+            android:clickable="true"
+            android:text="Confirm Payment" />
+
+    </LinearLayout>
+
+</RelativeLayout>

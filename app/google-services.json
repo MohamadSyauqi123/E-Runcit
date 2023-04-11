@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "930715359161",
+    "project_id": "e-runcit-7581d",
+    "storage_bucket": "e-runcit-7581d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930715359161:android:42a7ec366a094b21b94868",
+        "android_client_info": {
+          "package_name": "psm.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930715359161-33h75a1ambbv3r9inq3jfp2vjr4khgnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlemRIvqukFjKc1DW206JKKQs6LWBouQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930715359161-33h75a1ambbv3r9inq3jfp2vjr4khgnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

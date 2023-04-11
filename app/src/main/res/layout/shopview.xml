@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#C2C2C2">
+
+
+
+        <ImageView
+            android:id="@+id/store_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/store"
+            android:background="@color/white"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/shopViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Shop_Name"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp"
+            />
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="35dp"-->
+<!--            android:layout_marginLeft="120dp"-->
+<!--            android:src="@drawable/rider"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="155dp"/>
+
+        <TextView
+            android:id="@+id/deliver_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="175dp"/>
+
+        <TextView
+            android:id="@+id/shopView_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/black"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="120dp"/>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

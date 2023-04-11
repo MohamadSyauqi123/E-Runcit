@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">e-Runcit</string>
+
+    <string-array name="categories">
+        <item>Biscuit </item>
+        <item>Snacks</item>
+        <item>Chocolate and Sweets</item>
+        <item>Beverages</item>
+        <item>Grain Food</item>
+        <item>Spreads</item>
+        <item>Household Items</item>
+        <item>Health and Beauty</item>
+        <item>Canned Food</item>
+        <item>Health and Wellness</item>
+        <item>Pets Supplies</item>
+        <item>Stationary</item>
+        <item>Paper and Books</item>
+        <item>Nuts and Seeds</item>
+        <item>Breads</item>
+        <item>Fresh Produce</item>
+        <item>Frozen Foods</item>
+        <item>Cooking And Backing</item>
+        <item>Breads</item>
+        <item>Meat,Poultry And Seafood</item>
+        <item>Sauce</item>
+
+
+    </string-array>
+
+    <string-array name="unit">
+        <item>/ kg</item>
+        <item>/ gm</item>
+        <item>/ l</item>
+        <item>/ ml</item>
+        <item>/ Pc</item>
+        <item>/ Carton</item>
+
+    </string-array>
+
+    <string name="map_key" translatable="false">AIzaSyDxWiTVlpIZ5iHEkEDRsIgYQYy29Fiszv4</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

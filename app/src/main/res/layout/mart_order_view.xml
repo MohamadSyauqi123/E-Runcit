@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/input_bg"
+    app:cardBackgroundColor="#D2D2CF"
+    android:clickable="false">
+
+
+
+            <ImageView
+                android:id="@+id/custImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/usrnameblack" />
+
+            <TextView
+                android:id="@+id/customer_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:hint="Customer name"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/recieveMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Recieve Method"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="150dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date :"
+            android:textColor="@color/black"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="65dp"/>
+
+        <TextView
+            android:id="@+id/dateOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="65dp"
+            android:hint="date"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time :"
+            android:textColor="@color/black"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="65dp"/>
+
+        <TextView
+            android:id="@+id/timeOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Time"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="65dp"
+
+            />
+            <Button
+                android:id="@+id/viewOrder"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="95dp"
+                android:text="View Item"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:backgroundTint="@color/white"/>
+
+            <Button
+                android:id="@+id/martcomplete"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="95dp"
+                android:text="Complete"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:backgroundTint="@color/white"/>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mart.EditStoreContact">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg2"
+            >
+
+            <ImageButton
+                android:id="@+id/backtoprifole"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:src="@drawable/backarrow"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you change to  new number. We'll take you through a verification process "
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                app:boxStrokeColor="@color/black"
+                android:hint="Contact"
+                android:background="@drawable/input_bg"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:background="@drawable/input_bg"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="650dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp">
+
+
+                <Button
+                    android:id="@+id/saveeditmartcontact_buttn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#EA6403"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
